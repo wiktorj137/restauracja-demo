@@ -1,0 +1,41 @@
+{
+  "name": "restaurant-premium",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://wiktorj137.github.io/restauracja-demo",
+  "scripts": {
+    "dev": "next dev --turbopack --hostname 0.0.0.0 --port 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build && rm -rf ../publichtml && cp -r out ../publichtml",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
+  },
+  "dependencies": {
+    "@formkit/auto-animate": "^0.8.2",
+    "@react-three/drei": "^10.4.2",
+    "@react-three/fiber": "^9.2.0",
+    "framer-motion": "^12.23.0",
+    "locomotive-scroll": "^4.1.4",
+    "lucide-react": "^0.525.0",
+    "next": "15.3.5",
+    "react": "^19.0.0",
+    "react-custom-cursor": "^0.1.1",
+    "react-dom": "^19.0.0",
+    "react-mouse-particles": "^1.1.5",
+    "three": "^0.178.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.19.4",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.5",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
